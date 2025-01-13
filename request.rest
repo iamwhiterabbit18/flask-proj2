@@ -1,0 +1,29 @@
+GET http://127.0.0.1:5000/users?page=1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY2MDAzMiwianRpIjoiNjQ1MWYzNzYtZTY0OS00MjY0LWEwMWEtZmJmM2IzYjQ0MjYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IkdlbmUiLCJuYmYiOjE3MzY2NjAwMzIsImNzcmYiOiI5MzFiNWMzOC03MDJjLTQ3YzAtYTllNy02MGNhNGM0OTEzYzEiLCJleHAiOjE3MzY2NjA5MzIsImlzX2FkbWluIjp0cnVlfQ.U2tz6iH3KtAqjUm1f7MG1duchUTz8aRzixPjd0WCuRg
+
+###
+
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+  "username": "Gene",
+  "password": "password"
+}
+
+###
+
+POST http://127.0.0.1:5000/signup
+Content-Type: application/json
+
+{
+  "username": "Gene",
+  "password": "password"
+}
+
+###
+
+GET http://127.0.0.1:5000/whoami
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNjY2MDAzMiwianRpIjoiNjQ1MWYzNzYtZTY0OS00MjY0LWEwMWEtZmJmM2IzYjQ0MjYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IkdlbmUiLCJuYmYiOjE3MzY2NjAwMzIsImNzcmYiOiI5MzFiNWMzOC03MDJjLTQ3YzAtYTllNy02MGNhNGM0OTEzYzEiLCJleHAiOjE3MzY2NjA5MzIsImlzX2FkbWluIjp0cnVlfQ.U2tz6iH3KtAqjUm1f7MG1duchUTz8aRzixPjd0WCuRg

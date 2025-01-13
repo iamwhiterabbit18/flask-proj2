@@ -1,0 +1,6 @@
+{% extends "index.html" %} 
+  {% block title %} Home {% endblock %} 
+  {% block content %} 
+    <h1>Welcome {% user.username %}</h1>
+    <span style="color: grey; font-size: 8px">{% user.email %}</span>
+  {% endblock %}

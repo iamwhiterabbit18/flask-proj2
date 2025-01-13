@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+  {% block title %} Login {% endblock%}
+  {% block content %}
+    <form method="POST" action="">
+      {# <h3 class="text-center mb-4">Login</h3>
+      <div class="mb-3">
+        <label for="username">Username</label>
+        <input
+          type="username"
+          class="form-control"
+          id="username"
+          name="username"
+          placeholder="Enter username"
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button> #}
+      {{ form.hidden_tag() }}
+      {{ form.username }}
+      {{ form.password }}
+      {{ form.submit }}
+    </form>
+  {% endblock %}
